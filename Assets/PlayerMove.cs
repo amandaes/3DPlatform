@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour {
 
         if (touchGround)
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetMouseButtonDown(0))
             {
                 rb.velocity = new Vector3(0f, jumpSpeed, 0f);
                 touchGround = false;
